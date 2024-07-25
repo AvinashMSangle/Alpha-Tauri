@@ -1,0 +1,37 @@
+*{
+    padding:0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.parent{
+    height: 500px;
+    width: 500px;
+    border: 5px solid black;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    /* justify-items: flex-end; */
+    /* align-items: end; */
+
+}
+.box{
+    height: 100%;
+    width: 100%;
+    min-height: 10px;
+    background: red;
+    border: 1px solid black ;
+}
+.smily{
+    background: black;
+    grid-row-start: 1;
+    /* grid-column-start: 1; */
+    /* grid-column-end: 4; */
+    grid-column: 2/-1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
